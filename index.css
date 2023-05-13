@@ -1,12 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
+
+:root{
+    --font-family: "Inter", sans-serif;
+    --background-color: #FFF7ED;
+    --nav-font-color: #4d4d4d;
+    --active-nav-font-color: #161616;
+    --white-font-color: #ffffff;
+}
 * {
     box-sizing: border-box;
 }
 
+
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #FFF7ED;
-    font-family: "Inter", sans-serif;
+    background-color: var(--background-color);
+    font-family: var(--font-family)
 }
 
 body::-webkit-scrollbar {
@@ -16,4 +26,9 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+a {
+   color: unset;
+   text-decoration: none;
 }
