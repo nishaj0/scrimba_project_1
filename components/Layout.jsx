@@ -4,11 +4,11 @@ import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 
-export const Layout = () => {
+const Layout = () => {
    return (
       <div className="site">
          <Header />
-         <main className="site__content section-margin">
+         <main className="site__content">
             <Outlet />
          </main>
          <Footer />
